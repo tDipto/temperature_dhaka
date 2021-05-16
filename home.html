@@ -230,15 +230,17 @@
         </h2>
         <p id="date"></p>
         <h1 class="temp">{%tempval%}&deg;C</h1>
-        <h3 class="temp_min_max">{%tempStatus2%}</h3>
+        <h3 class="temp_min_max" id="tempCondition"></h3>
       </div>
     </div>
 
     <script>
       const curDate = document.getElementById("date");
       let weathercon = document.getElementById("weathercon");
+      let condition = document.getElementById("tempCondition");
 
       const tempStatus = "{%tempStatus%}";
+      condition.innerHTML = tempStatus;
 
       if (tempStatus == "Sunny") {
         weathercon.innerHTML =

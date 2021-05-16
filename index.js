@@ -18,7 +18,6 @@ const replaceVal = (tempVal, orgVal) => {
     temperature = temperature.replace("{%location%}", orgVal.name);
     temperature = temperature.replace("{%country%}", orgVal.sys.country);
     temperature = temperature.replace("{%tempStatus%}", orgVal.weather[0].main);
-    temperature = temperature.replace("{%tempStatus2%}", orgVal.weather[0].main);
     return temperature;
 }
 
