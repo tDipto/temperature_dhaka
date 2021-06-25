@@ -7,7 +7,7 @@ const app = express();
 //
 dotenv.config({path:'./.env'});
 // html file
-const homeFile = fs.readFileSync("home.html" , "utf-8");
+const homeFile = fs.readFileSync("index.html" , "utf-8");
 //port
 const PORT = process.env.PORT || 3000;
 
